@@ -37,7 +37,7 @@ function handleClick(e) {
             />
           </Col>
           <Col xs="auto">
-            <Button type="submit" variant="info" size="sm" className='submit-button' onClick={handleClick}>
+            <Button type="submit" variant="outline-success" size="sm" className='submit-button' onClick={handleClick}>
               <div>
                 <Image
                     src="/mag-icon.png"
@@ -55,7 +55,7 @@ function handleClick(e) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             
-          <Link href="/" passHref>
+          <Link href="/home" passHref>
                 <Nav.Link as="div" active={router.pathname === "/"} onClick={(e) => {e.preventDefault(); router.push("/")}}>
                         Home
                 </Nav.Link>
